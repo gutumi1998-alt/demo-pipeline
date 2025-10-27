@@ -1,0 +1,17 @@
+pipeline {
+    agent any 
+
+    stages {
+        stage("checkout"){
+            steps {
+            git url: "https://github.com/gutumi1998-alt/demo-pipeline.git",
+            branch: "main",
+        }
+   }
+        stage("docker image")
+            steps{
+                
+            }
+    }
+
+}
